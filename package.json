@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "yarn && node -r dotenv/config index.js",
+    "lint": "eslint"
   },
   "repository": {
     "type": "git",
@@ -13,7 +14,22 @@
   "author": "Alessandro Defendenti (Rollercoders Team)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TheFe91/monster-builder/issues"
+    "url": "git+https://github.com/TheFe91/monster-builder/issues"
   },
-  "homepage": "https://github.com/TheFe91/monster-builder#readme"
+  "homepage": "git+https://github.com/TheFe91/monster-builder#readme",
+  "dependencies": {
+    "@types/node": "^14.14.10",
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "regenerator-runtime": "^0.13.7"
+  }
 }
