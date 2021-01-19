@@ -1,0 +1,19 @@
+{
+  "name": "monster-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheFe91/monster-builder.git"
+  },
+  "author": "Alessandro Defendenti (Rollercoders Team)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheFe91/monster-builder/issues"
+  },
+  "homepage": "https://github.com/TheFe91/monster-builder#readme"
+}
