@@ -7,14 +7,17 @@ const bot = new Discord.Client();
 bot.login(token).then(null);
 
 bot.on('ready', () => {
-  log('Logged in as Monster Builder');
+  log('Logged in as D&D 3.5 Monster Builder');
 });
 
 bot.on('message', (message) => {
-  const { channel: { guild: isGuild } } = message;
+  const { author: { id: authorId, bot: isBot, username }, content, channel: { guild: isGuild } } = message;
+
+  if (bot.user.id === authorId) {
+    return;
+  }
 
   if (!isGuild) {
-    const { author: { bot: isBot, username }, content } = message;
     if (!isBot) {
       log(`${username} says: ${content.toLowerCase().trim()}`);
     }

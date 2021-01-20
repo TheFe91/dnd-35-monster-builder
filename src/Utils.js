@@ -25,6 +25,7 @@ const dispatchBotCommand = (channel, content) => {
       printHelp(channel);
       break;
     default:
+      channel.send(`I'm sorry, but "**${command}**" is an ***undefined*** command. Please, try again`);
       break;
   }
 };
