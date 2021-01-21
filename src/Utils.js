@@ -17,8 +17,8 @@ const printHelp = (channel) => {
   channel.send(
     `
 I will help you to generate a monster for a D&D 3.5 campaign.
-Of course this I'm intended to be a DungeonMaster-only bot, but feel free to use me as you like.
-All you have to do is just type \`!newmonster\` and follow the link that the I'll provide.
+Of course I'm intended to be a DungeonMaster-only bot, but feel free to use me as you like.
+All you have to do is just type \`!newmonster\` and follow the link that I'll provide.
 The monster will be available for you and for all the people using the Dungeons&Dragons Bot Suite 
     `,
   );
